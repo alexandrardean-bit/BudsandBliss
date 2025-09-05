@@ -13,117 +13,110 @@
     <style>
         body {
             font-family: 'Spicy Rice', cursive;
-            background-color: #f5f5dc; /* A creamy, vintage background */
+            background-color: #f8f1e7;
             color: #2c2c2c;
         }
 
         .groovy-font {
             font-family: 'Spicy Rice', cursive;
-            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
         }
 
-        .header-bg {
-            background-image: url('https://placehold.co/1200x600/f87171/581c87?text=Bliss+and+Buds');
-            background-size: cover;
-            background-position: center;
+        .container {
+            max-width: 1200px;
         }
 
-        .logo-text-top {
-            font-size: clamp(3rem, 10vw, 8rem);
-            line-height: 1;
+        .button {
+            background-color: #6c8a77;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
         }
 
-        .logo-text-bottom {
-            font-size: clamp(2rem, 8vw, 6rem);
-            line-height: 1;
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Custom glow effect */
-        .glow-shadow {
-            text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+        .card-shadow {
+            box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link:hover {
+            color: #b87a4a;
         }
     </style>
 </head>
-<body class="bg-[#f5f5dc] text-[#2c2c2c] leading-relaxed">
-    
-    <!-- Hero Section -->
-    <header class="relative w-full h-screen header-bg flex items-center justify-center text-center">
-        <div class="absolute inset-0 bg-purple-900 opacity-40"></div>
-        <div class="relative z-10 p-8 rounded-2xl">
-            <!-- Retro Logo Text with funky colors -->
-            <div class="groovy-font text-white">
-                <h1 class="logo-text-top text-pink-300 drop-shadow-[8px_8px_0_rgba(236,72,153,0.8)] glow-shadow">Bliss</h1>
-                <div class="logo-text-bottom text-pink-300 drop-shadow-[8px_8px_0_rgba(236,72,153,0.8)] mt-[-20px]">and Buds</div>
+<body class="bg-[#f8f1e7] text-[#2c2c2c] leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="py-4 px-8 md:px-16 lg:px-24">
+        <nav class="flex justify-between items-center container mx-auto">
+            <a href="#" class="text-xl groovy-font">Bliss and Buds</a>
+            <div class="flex space-x-6 md:space-x-10 items-center text-sm md:text-base">
+                <a href="#" class="nav-link font-bold">HOME</a>
+                <a href="#" class="nav-link">ABOUT US</a>
+                <a href="#" class="nav-link">SHOP</a>
+                <a href="#" class="nav-link">COMMUNITY</a>
             </div>
-            <p class="text-white mt-4 max-w-2xl mx-auto text-lg md:text-xl font-bold">Your go-to space for friends to learn, grow, and make every session a good one.</p>
-            <a href="#products" class="mt-8 inline-block bg-pink-500 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">Shop the Vibe</a>
-        </div>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 md:py-24 bg-pink-500 text-center text-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-5xl font-bold mb-4 groovy-font drop-shadow-md">Our Vibe</h2>
-            <p class="max-w-3xl mx-auto text-lg">
-                At Bliss and Buds, we're all about sharing the good vibes and finding products that bring us all closer together. We believe that a good session is a shared one, and we're here to help you learn and grow on your cannabis journey, one friend at a time.
-            </p>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main class="container mx-auto px-8 md:px-16 lg:px-24 py-12">
+        <section class="text-center py-16 md:py-24">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold groovy-font text-[#b87a4a] mb-2">GOOD VIBES & GOOD FRIENDS</h1>
+            <p class="text-lg md:text-xl text-[#6c8a77] mb-8">YOUR DIGITAL HANGOUT FOR ALL THINGS CONNECTED</p>
 
-    <!-- Product Gallery Section -->
-    <section id="products" class="py-16 md:py-24">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 groovy-font drop-shadow-md">Good Vibes, Great Finds</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Product Card 1 -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img class="w-full h-64 object-cover" src="https://placehold.co/400x400/98fb98/1a1a1a?text=Vaporizer" alt="Vaporizer">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold mb-2 groovy-font">The Chill Vaporizer</h3>
-                        <p class="text-gray-600 mb-4">Perfect for a smooth, relaxed session with your buds.</p>
-                        <span class="text-2xl font-bold text-pink-500">$85</span>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mt-16">
+                <!-- Shop Item 1 -->
+                <div class="bg-[#e9d6c7] p-4 rounded-xl card-shadow transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/400x300/a8c6b3/fff?text=Friends+Hanging+Out" alt="Friends Hanging Out" class="rounded-xl mb-4">
+                    <h3 class="text-lg font-bold">OUR STORY</h3>
+                    <p class="text-sm">Bliss and Buds is all about growing together. Find your flow, connect with your crew.</p>
                 </div>
-                <!-- Product Card 2 -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img class="w-full h-64 object-cover" src="https://placehold.co/400x400/f9a8d4/1a1a1a?text=Grinder" alt="Grinder">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold mb-2 groovy-font">The Good Vibe Grinder</h3>
-                        <p class="text-gray-600 mb-4">Get the perfect grind and get the good times rolling.</p>
-                        <span class="text-2xl font-bold text-pink-500">$25</span>
-                    </div>
+
+                <!-- Shop Item 2 -->
+                <div class="bg-[#e9d6c7] p-4 rounded-xl card-shadow transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/400x300/ffb380/fff?text=Ceramic+Mugs" alt="Ceramic Mugs" class="rounded-xl mb-4">
+                    <h3 class="text-lg font-bold">SHOP THE VIBE</h3>
+                    <p class="text-sm">Ceramic Mugs</p>
+                    <a href="#" class="text-xs font-bold underline">LEARN MORE</a>
                 </div>
-                <!-- Product Card 3 -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img class="w-full h-64 object-cover" src="https://placehold.co/400x400/fcd34d/1a1a1a?text=Rolling+Papers" alt="Rolling Papers">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-semibold mb-2 groovy-font">Friendship Papers</h3>
-                        <p class="text-gray-600 mb-4">Roll up and share the moment with friends.</p>
-                        <span class="text-2xl font-bold text-pink-500">$5</span>
-                    </div>
+
+                <!-- Shop Item 3 -->
+                <div class="bg-[#e9d6c7] p-4 rounded-xl card-shadow transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/400x300/96a682/fff?text=Board+Games" alt="Board Games" class="rounded-xl mb-4">
+                    <h3 class="text-lg font-bold">SHOP THE VIBE</h3>
+                    <p class="text-sm">Board Games</p>
+                    <a href="#" class="text-xs font-bold underline">LEARN MORE</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Call to Action Section -->
-    <section class="py-16 md:py-24 bg-purple-700 text-center text-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-5xl font-bold mb-4 groovy-font drop-shadow-md">Ready to Grow with Us?</h2>
-            <p class="max-w-2xl mx-auto text-lg mb-8">Join the Bliss and Buds community and make every session a little more special.</p>
-            <a href="#" class="inline-block bg-pink-500 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">Join the Community</a>
-        </div>
-    </section>
+        <!-- Community Spotlight Section -->
+        <section class="py-16 md:py-24">
+            <h2 class="text-3xl md:text-4xl groovy-font text-[#b87a4a] text-center mb-12">COMMUNITY SPOTLIGHT</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <img src="https://placehold.co/400x400/b87a4a/fff?text=Community+Photo" alt="Community Photo" class="rounded-xl card-shadow w-full h-auto">
+                <img src="https://placehold.co/400x400/96a682/fff?text=Community+Photo" alt="Community Photo" class="rounded-xl card-shadow w-full h-auto">
+                <img src="https://placehold.co/400x400/ffb380/fff?text=Community+Photo" alt="Community Photo" class="rounded-xl card-shadow w-full h-auto">
+                <img src="https://placehold.co/400x400/e9d6c7/fff?text=Community+Photo" alt="Community Photo" class="rounded-xl card-shadow w-full h-auto">
+                <img src="https://placehold.co/400x400/6c8a77/fff?text=Community+Photo" alt="Community Photo" class="rounded-xl card-shadow w-full h-auto">
+                <img src="https://placehold.co/400x400/b87a4a/fff?text=Community+Photo" alt="Community Photo" class="rounded-xl card-shadow w-full h-auto">
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer class="py-8 bg-purple-900 text-white text-center">
+    <footer class="py-8 bg-[#6c8a77] text-white text-center">
         <div class="container mx-auto px-4">
+            <p>GOOD TIMES, GOOD COMPANY, GOOD VIBES.</p>
             <p>&copy; 2024 Bliss and Buds. All rights reserved.</p>
         </div>
     </footer>
-
-</body>
-</html>
 
 </body>
 </html>
